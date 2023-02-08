@@ -1,0 +1,15 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  environment_input_type: "VPCInputs"
+
+  types:
+    VPCInputs:
+      type: object
+      description: "Input properties for a vpc environment."
+      properties:
+        vpc_name:
+          type: string
+          description: "Name for the vpc"
+      required:
+        - vpc_name
