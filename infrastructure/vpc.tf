@@ -5,5 +5,5 @@ resource "aws_vpc" "vpc" {
   enable_dns_support                   = var.enable_dns_support
   enable_network_address_usage_metrics = var.enable_network_address_usage_metrics
   enable_dns_hostnames                 = var.enable_dns_hostnames
-  tags                                 = merge({ Name = var.vpc_name }, var.tags)
+  tags                                 = merge({ Name = var.var.environment.inputs.vpc_name }, var.tags)
 }
